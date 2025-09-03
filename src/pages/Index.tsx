@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Pookkalam3D } from "@/components/Pookkalam3D";
 
 const Index = () => {
   return (
@@ -14,7 +15,7 @@ const Index = () => {
           {/* Main Content */}
           <div className="text-center mb-16 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-pokkalam-orange via-pokkalam-pink to-pokkalam-yellow bg-clip-text text-transparent mb-6">
-              My Pokkalam
+              My Pookkalam
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-4">
               A traditional floral artwork celebrating the festival of Onam
@@ -22,13 +23,25 @@ const Index = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-pokkalam-orange to-pokkalam-pink mx-auto rounded-full"></div>
           </div>
 
-          {/* Pokkalam Display */}
-          <div className="flex justify-center mb-16 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          {/* 3D Pookkalam Display */}
+          <div className="mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-pokkalam-orange mb-4">Experience in 3D</h2>
+              <p className="text-muted-foreground">Click and drag to rotate • Scroll to zoom • Auto-rotation enabled</p>
+            </div>
+            <Pookkalam3D />
+          </div>
+
+          {/* Original Pookkalam Display */}
+          <div className="flex justify-center mb-16 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <Card className="p-8 bg-white/80 backdrop-blur-sm border-2 border-pokkalam-orange/20 shadow-2xl animate-glow">
+              <div className="text-center mb-6">
+                <h2 className="text-2xl font-bold text-pokkalam-pink">Original Artwork</h2>
+              </div>
               <div className="relative">
                 <img
                   src="/lovable-uploads/0f31927f-b13a-4f91-abc2-4f5d3dc9d3c3.png"
-                  alt="Beautiful Pokkalam - Traditional Kerala floral art with vibrant orange, yellow, pink, green and red colors arranged in intricate concentric patterns"
+                  alt="Beautiful Pookkalam - Traditional Kerala floral art with vibrant orange, yellow, pink, green and red colors arranged in intricate concentric patterns"
                   className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg hover:scale-105 transition-transform duration-500"
                 />
                 {/* Decorative frame corners */}
@@ -43,9 +56,9 @@ const Index = () => {
           {/* About Section */}
           <div className="grid md:grid-cols-2 gap-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <Card className="p-8 bg-white/60 backdrop-blur-sm border border-pokkalam-orange/30 hover:shadow-xl transition-all duration-300">
-              <h2 className="text-3xl font-bold text-pokkalam-orange mb-4">About Pokkalam</h2>
+              <h2 className="text-3xl font-bold text-pokkalam-orange mb-4">About Pookkalam</h2>
               <p className="text-foreground leading-relaxed">
-                Pokkalam is a traditional floral carpet made during the harvest festival of Onam in Kerala, India. 
+                Pookkalam is a traditional floral carpet made during the harvest festival of Onam in Kerala, India. 
                 These intricate designs are created using fresh flower petals, leaves, and natural materials, 
                 symbolizing prosperity, unity, and the welcoming of King Mahabali.
               </p>
@@ -54,15 +67,15 @@ const Index = () => {
             <Card className="p-8 bg-white/60 backdrop-blur-sm border border-pokkalam-pink/30 hover:shadow-xl transition-all duration-300">
               <h2 className="text-3xl font-bold text-pokkalam-pink mb-4">The Art Form</h2>
               <p className="text-foreground leading-relaxed">
-                Each Pokkalam tells a unique story through its patterns and colors. The circular designs represent 
-                the cycle of life and nature's abundance. This particular creation showcases the traditional 
-                vibrant palette and geometric precision that makes each Pokkalam a masterpiece.
+                Each Pookkalam tells a unique story through its patterns and colors. The circular designs represent 
+                the cycle of life and nature&apos;s abundance. This particular creation showcases the traditional 
+                vibrant palette and geometric precision that makes each Pookkalam a masterpiece.
               </p>
             </Card>
           </div>
 
           {/* Color Palette Section */}
-          <div className="mt-16 text-center animate-fade-in" style={{ animationDelay: '0.9s' }}>
+          <div className="mt-16 text-center animate-fade-in" style={{ animationDelay: '0.8s' }}>
             <h3 className="text-2xl font-bold text-foreground mb-8">Colors of Tradition</h3>
             <div className="flex justify-center gap-4 flex-wrap">
               <div className="flex flex-col items-center">
